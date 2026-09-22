@@ -26,25 +26,25 @@ class starter {
 		System.out.println();
 
 		if(num1%2 == 0) {
-System.out.println(num1 +" is even!");
+System.out.println(num1 +" is devisible by 2!");
 		}
 		else{
-			System.out.println(num1 +" is odd!");
+			System.out.println(num1 +" is not divisible by 2!");
 		}
 		if(num1%3==0){
-				System.out.println(num1 +" is devisible by 3!");
+				System.out.println(num1 +" is divisible by 3!");
 		}
 		else{
 			 num1divide3 = false;
 		}
 		if(num1%4==0){
-				System.out.println(num1 +" is devisible by 4!");
+				System.out.println(num1 +" is divisible by 4!");
 		}
 		else{
 			 num1divide4 = false;
 		}
 		if(num1%5==0){
-				System.out.println(num1 +" is devisible by 5!");
+				System.out.println(num1 +" is divisible by 5!");
 		}
 		else{
 			 num1divide5 = false;
@@ -55,25 +55,25 @@ System.out.println(num1 + " isnt divisible by 3, 4, or 5!");
 		System.out.println();
 
 		if(num2%2 == 0) {
-System.out.println(num2 +" is even!");
+System.out.println(num2 +" is divisible by 2!");
 		}
 		else{
-			System.out.println(num2 +" is odd!");
+			System.out.println(num2 +" is not divisible by 2!");
 		}
 		if(num2%3==0){
-				System.out.println(num2 +" is devisible by 3!");
+				System.out.println(num2 +" is divisible by 3!");
 		}
 		else{
 			 num2divide3 = false;
 		}
 		if(num2%4==0){
-				System.out.println(num2 +" is devisible by 4!");
+				System.out.println(num2 +" is divisible by 4!");
 		}
 		else{
 			 num2divide4 = false;
 		}
 		if(num2%5==0){
-				System.out.println(num2 +" is devisible by 5!");
+				System.out.println(num2 +" is divisible by 5!");
 		}
 		else{
 			 num2divide5 = false;
