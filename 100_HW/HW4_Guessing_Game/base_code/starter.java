@@ -1,6 +1,6 @@
 /*
- *	Author:
- *  Date:
+ *	Author: AJ Landry-yates
+ *  Date: 9/24/26
  * 	Collaborator:
 */
 
@@ -9,8 +9,7 @@ import java.util.Random;
 class starter {
 	public static void main(String args[]) {
 		Scanner evil = new Scanner(System.in);
-		// the string "I love to learn coding remotely." will appear in
-		// the command window when you compile and run this program.
+	
 		int question = (int)(Math.random()*3);
 		System.out.println("would you like to play a little guessing game?");
 		System.out.println("you get 2 hints!");
@@ -27,7 +26,7 @@ class starter {
 				System.out.println();
             	System.out.println("You got it!");
 			} else {
-				System.out.println("Wrong, better luck next time!");
+				System.out.println("Wrong, review some trivia!");
 			}
 		}
 		} else if(question == 1) {
@@ -43,7 +42,7 @@ class starter {
 				System.out.println();
             	System.out.println("You got it!");
 				} else {
-					System.out.println("Wrong, better luck next time!");
+					System.out.println("Wrong, review some trivia!");
 				}
 		}
 		} else {
@@ -51,7 +50,7 @@ class starter {
 		 String answer3 = evil.nextLine();
 		 if(answer3.equals("german")||answer3.equals("German")){
 			System.out.println();
-			System.out.println("You got it! Good job!");
+		           	System.out.println("You got it! Good job!");
 		} else {
 			System.out.println("Wrong! Heres another hint: its spoken in germany");
 			answer3 = evil.nextLine();
@@ -59,7 +58,7 @@ class starter {
 			System.out.println();
             System.out.println("You got it!");
 			} else {
-				System.out.println("Wrong, better luck next time!");
+				System.out.println("Wrong, review some trivia!");
 			}
 		}
 		}

@@ -12,6 +12,8 @@ class starter {
 	public static void main(String args[]) {
 		// Your code goes below here
 		BaseClass test = new BaseClass();
+		Scanner evil = new Scanner(System.in);
+		System.out.print
 
 
 		
