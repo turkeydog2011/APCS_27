@@ -13,7 +13,7 @@ class starter {
 		// Your code goes below here
 		BaseClass test = new BaseClass();
 		Scanner evil = new Scanner(System.in);
-		System.out.print
+		
 
 
 		
