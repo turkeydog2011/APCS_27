@@ -11,17 +11,26 @@ class starter {
 		// Your code goes below here
 		Scanner evil = new Scanner(System.in);
 		System.out.println("Gimme a sentence twin");
-		
-		System.out.println(toString(evil.nextLine()));
+		String sent1 = evil.nextLine();
+		System.out.println("Gimme another sentence twin");
+	String sent2 = evil.nextLine();
+	toString(sent1);
+    toStringCombined(sent1,sent2);
+
 	
 
 
 
 		
 	}
-	public static String toString(String lala){
-		String mr = lala;
-		return lala;
+	public static void toString(String sent1){
+		String lala = sent1;
+		System.out.println(lala);
 		
+	}
+	public static void toStringCombined(String sent1, String sent2) {
+		String lele = sent1;
+		String lolo = sent2;
+		System.out.println(sent1 + " " + sent2);
 	}
 }

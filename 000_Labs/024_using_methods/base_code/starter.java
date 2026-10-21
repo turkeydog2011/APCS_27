@@ -14,6 +14,73 @@ class starter {
 
 	public static void main(String args[]) throws InterruptedException {
 		// Write your code here!
+		Scanner evil = new Scanner(System.in);
+		populateArrayList();
+		System.out.println("would you like to play a typing game?");
+		String play = evil.nextLine();
+		boolean pley;
+		if(play.equalsIgnoreCase("yes")|| play.equalsIgnoreCase("y")) {
+			
+			 pley = true;
+		} else {
+			pley = false;
+		}
+			while(pley == true){
+			int mide = 2;
+			while(mide == 2){
+				System.out.println("Which mode would you like choose a sentence(type choose) or use a random(type random)");
+			String mode = evil.nextLine();
+			if(mode.equalsIgnoreCase("choose")) {
+				mide = 0;
+			} else if(mode.equalsIgnoreCase("random")) {
+mide = 1;
+			} else{
+				System.out.println("Sorry, didnt catch that, could you say it again?");
+				mide =2;
+			}
+			}
+			String sentence;
+			if(mide == 0) {
+				System.out.println("Great, which sentence would you like(1-100)?");
+				int sent = evil.nextInt();
+				evil.nextLine();
+				sentence = getSentence(sent);
+			} else {
+				sentence = getSentence();
+			}
+			System.out.println("Your sentence is: " + sentence);
+			countdown();
+			startTimer();
+			String answer = evil.nextLine();
+			double time = 100000000;
+			boolean win = false;
+			if(answer.equals(sentence)) {
+System.out.println("you did it! Your time was: " + endTimer());
+if(endTimer()<time){
+	time = endTimer();
+	win = true;
+}
+
+			} else {
+				System.out.println("Sorry, thats wrong.");
+								System.out.println("You had " + compareSentences(sentence, answer) + " errors");
+									System.out.println("Your time was: " + endTimer());
+			}
+			if (win == true){
+			System.out.println("Your highscore is: " + time);
+			}
+			System.out.println("Would you like to play again?");
+			play = evil.nextLine();
+			if(play.equalsIgnoreCase("yes")|| play.equalsIgnoreCase("y")) {
+			
+			 pley = true;
+		} else {
+			pley = false;
+		}
+			}
+
+		
+
 
 		
 	}
@@ -108,3 +175,4 @@ class starter {
 	}
 
 }
+
