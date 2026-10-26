@@ -7,7 +7,7 @@
 import pkg.*;
 import java.util.Scanner;
 
-import javax.crypto.Cipher;
+
 
 class starter {
 	public static void main(String args[]) {
@@ -29,19 +29,22 @@ class starter {
 		}
 		System.out.println("What would you like to encode/decode");
 		String code = evil.nextLine();
+		boolean cheat = false;
 		int brute = 0;
-		
-		if(ques.equalsIgnoreCase("brute")){
-			System.out.println("Brute forcing it (I couldnt figure out number 7, what does 13 and 29 mean)");
-			while(brute<37){
-							System.out.println(Cipher.keyedEncode(code, brute));
+		if (ques.equalsIgnoreCase("brute")) {
+			System.out.println("Brute forcing it (I couldnt think of any other way for the hard problems)");
+			 cheat = true;
+			 while(brute<37){
+				System.out.println(Cipher.keyedEncode(code,brute));
+				brute++;
+			 }
 
-			brute++;
-			}
 		}
-		if(keyes == true) {
+		
+		
+		if(keyes == true&& cheat == false) {
 			System.out.println("Your result is: " +  Cipher.keyedEncode(code, key) );
-		} else {
+		} else if(cheat == false){
 						System.out.println("Your result is: " +  Cipher.encode(code) );
 		}
 		System.out.println("Would you like to use it again?");
@@ -56,3 +59,5 @@ class starter {
 
 	}
 }
+
+	
