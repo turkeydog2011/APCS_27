@@ -24,7 +24,35 @@ class starter {
 
 	public static void main(String args[]) {
 		// Your code goes below here
-		PooleDwarf test = new PooleDwarf();
+		int matches = 0;
+		PooleDwarf comparer = new PooleDwarf(randName(),(int)(Math.random()*7));
+		PooleDwarf compaed1 = new PooleDwarf(randName(),(int)(Math.random()*7));
+		PooleDwarf compaed2 = new PooleDwarf(randName(),(int)(Math.random()*7));
+		PooleDwarf compaed3 = new PooleDwarf(randName(),(int)(Math.random()*7));
+		PooleDwarf compaed4 = new PooleDwarf(randName(),(int)(Math.random()*7));
+		PooleDwarf compaed5 = new PooleDwarf(randName(),(int)(Math.random()*7));
+		PooleDwarf compaed6 = new PooleDwarf(randName(),(int)(Math.random()*7));
+		if(comparer.isSameName(compaed1.getName())) {
+			matches++;
+		}
+		if(comparer.isSameName(compaed2.getName())) {
+			matches++;
+		}
+		if(comparer.isSameName(compaed3.getName())) {
+			matches++;
+		}
+		if(comparer.isSameName(compaed4.getName())) {
+			matches++;
+		}
+		if(comparer.isSameName(compaed5.getName())) {
+			matches++;
+		}
+		if(comparer.isSameName(compaed6.getName())) {
+			matches++;
+		}
+		System.out.println("The name " + comparer.getName() + " was matched " + matches + " times.");
+
+
 		
 	}
 }

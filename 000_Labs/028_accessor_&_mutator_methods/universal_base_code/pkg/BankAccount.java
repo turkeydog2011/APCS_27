@@ -53,9 +53,22 @@ Owner = o;
 		Balance = b;
 		isActive = true;
 	}
+	public void closeAccount(){
+isActive = false;
+	}
 	public double deposit(double a) {
 		if (isActive = true){
 		return Balance + a;
+		} else {
+			return Balance;
+		}
+	}
+	public void    checkBalance() {
+		System.out.println("Account Balance is: " + Balance);
+	}
+	public double withdraw(double b) {
+		if (isActive = true  && b<Balance){
+		return Balance - b;
 		} else {
 			return Balance;
 		}
