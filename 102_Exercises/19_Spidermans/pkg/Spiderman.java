@@ -58,9 +58,7 @@ public class Spiderman {
 	public void setActor(String actor) {
 		this.actor = actor;
 	}
-	public void setVillian(String villain) {
-		this.villain = villain;
-	}
+	
 
 
 	// ---------------------------------------
