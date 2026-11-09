@@ -15,13 +15,16 @@ public class RunningAverage{
     */
     public RunningAverage(){
         /* implementation not shown */
+        count = 0;
+        average = 0.0;
     }
 
     /** Updates the running average to reflect the entry of a new
     * rating, as described in part (a).
     */
     public void updateAverage(double newVal){
-        /* to be implemented in part (a) */
+        average = ((average*count+newVal)/count+1);
+                count++;
     }
 
 
@@ -32,11 +35,24 @@ public class RunningAverage{
     * Precondition: num > 0
     */
     public int processNewRatings(int num){
-        /* to be implemented in part (b) */
+        int cycle = 0;
+        double temp = 0;
+        int retin= 0;
+        while(cycle!= num){
+temp=getNewRating();
+if(temp>=0){
+    updateAverage(temp);
+ 
+} else {
+    retin++;
+}
+        }
+        return retin;
     }
 
     /** Returns a single numeric rating. */
     public double getNewRating(){
-        /* implementation not shown */
+        //said this method is provided but couldnt find it ¯\_(ツ)_/¯
+        return (Math.random()*13)-3;
     }
 }
